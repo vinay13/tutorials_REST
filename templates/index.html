@@ -1,0 +1,12 @@
+<html>
+<body>
+
+<a href="/snippets/{{snippet.id}}/">{{snippet.language}} {{snippet.style}}</a>
+
+<form action="{% url 'snippets' %}" method="post">
+      <input type="text" name="code" />
+      <input type="text" name="language" />
+      <input type="submit" value="Add Snippet" />
+</form>
+</body>
+</html>
